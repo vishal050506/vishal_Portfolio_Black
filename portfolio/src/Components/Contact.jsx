@@ -11,10 +11,12 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     setErrors((prev) => ({ ...prev, [e.target.name]: "" }));
+    setSuccessMessage(""); // clear success message when user types again
   };
 
   const handleSubmit = (e) => {
@@ -31,21 +33,26 @@ const Contact = () => {
     }
 
     emailjs
-      .sendForm(
-        "service_umt1l8j", // Your service ID
-        "template_i28kavi", // Your template ID
-        formRef.current,
-        {
-          publicKey: "SrUAVYvg6LHmBMg5E", // Your public key
-        }
-      )
+      .sendForm("service_umt1l8j", "template_i28kavi", formRef.current, {
+        publicKey: "SrUAVYvg6LHmBMg5E",
+      })
       .then(() => {
-        alert("Message sent successfully!");
+        setSuccessMessage("✅ Your message has been sent successfully!");
         setFormData({ name: "", email: "", message: "" });
+
+        // Remove message after 5 seconds
+        setTimeout(() => {
+          setSuccessMessage("");
+        }, 2000);
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
-        alert("Something went wrong. Try again later.");
+        setSuccessMessage("❌ Something went wrong. Please try again.");
+
+        // Remove error message after 5 seconds
+        setTimeout(() => {
+          setSuccessMessage("");
+        }, 5000);
       });
   };
 
@@ -124,6 +131,12 @@ const Contact = () => {
               SEND MESSAGE
             </button>
           </div>
+
+          {successMessage && (
+            <p className="text-center text-green-500 font-medium mt-4">
+              {successMessage}
+            </p>
+          )}
         </form>
       </div>
     </section>

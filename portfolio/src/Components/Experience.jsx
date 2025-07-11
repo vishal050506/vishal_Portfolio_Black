@@ -11,19 +11,21 @@ const experiences = [
   {
     title: "Frontend Developer Intern",
     company: "CodSoft Technologies",
-    date: "jul 2024 – Aug 2024",
+    date: "Jul 2024 – Aug 2024",
   },
   {
     title: "President of CodeX club",
     company: "Gateway Institute Of Engineering and Technology",
     date: "Jan 2023 – Jan 2025",
   },
-  
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-black text-white px-6 md:px-12 py-16">
+    <section
+      id="experience"
+      className="bg-black text-white px-6 md:px-12 py-16"
+    >
       <h3 className="text-xl text-blue-400 font-semibold uppercase tracking-wide mb-2">
         Professional Journey
       </h3>
@@ -79,4 +81,4 @@ const Experience = () => {
 };
 
 export default Experience;
-// 
+//

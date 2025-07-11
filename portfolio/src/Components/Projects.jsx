@@ -103,14 +103,14 @@ const Section = styled.section`
 const TitleWrapper = styled.div`
   margin-bottom: 3rem;
   p {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: #60a5fa;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: bold;
     margin-top: 0.5rem;
   }

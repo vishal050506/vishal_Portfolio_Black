@@ -1,8 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { assets } from "../assets/assets";
-// import playIcon from "../assets/play-icon.svg"; // Add your play icon SVG
-// import videoThumbnail from "../assets/thumbnail.jpg"; // Replace with your image
 
 const AboutMe = () => {
   return (

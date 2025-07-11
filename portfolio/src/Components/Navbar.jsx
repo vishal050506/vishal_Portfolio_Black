@@ -107,7 +107,7 @@ const Navbar = () => {
               onClick={() => setVisible(false)}
             >
               Why Choose Me?
-            </a>  
+            </a>
             <NavLink
               to="/"
               className="py-2 hover:text-blue-500 transition duration-200 cursor-pointer"

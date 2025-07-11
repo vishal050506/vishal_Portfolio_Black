@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior:smooth;
+}
+
+body{
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  overflow-y: scroll;         /* still allows scroll */
+  scrollbar-width: none;  
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-box {
+  position: relative;
+  width: 8.5rem;
+  height: 3rem;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    #656565,
+    #7f42a7,
+    #6600c5,
+    #5300a0,
+    #757575,
+    #656565
+  );
+  background-size: 200%;
+  animation: animationGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes animationGradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+.tag-box .tag {
+  position: absolute;
+  inset: 3px 3px 3px 3px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.tag-box .tag:hover {
+  color: rgb(71, 120, 245);
+}

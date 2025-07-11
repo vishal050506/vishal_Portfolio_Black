@@ -10,7 +10,7 @@ import vish from "./vish.jpg";
 import code from "./code.mp4";
 import ai from "./ai.png";
 import trad from "./trad.png";
-import battery from "./battery.png";
+
 import memoji from "./memoji.png";
 import codeeditor from "./codeeditor.png";
 import app from "./app.png";
@@ -21,7 +21,6 @@ export const assets = {
   code,
   trad,
   codeeditor,
-  battery,
   memoji,
   vish,
   prog,

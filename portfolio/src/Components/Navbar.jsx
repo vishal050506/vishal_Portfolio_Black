@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <div className="tag-box mt-2 ml-4 hidden sm:block">
             <a
-              href="https://drive.google.com/file/d/1o-HiKOb7NU3deo1e5rGXM2mFjZJAT3eG/view?usp=sharing"
+              href="https://drive.google.com/file/d/1mckMyZyqicqguF-KWsHck9ARar3mNWXO/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="tag"
@@ -149,7 +149,7 @@ const Navbar = () => {
             </a>
             <div className="tag-box py-2">
               <a
-                href="https://drive.google.com/file/d/1o-HiKOb7NU3deo1e5rGXM2mFjZJAT3eG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1mckMyZyqicqguF-KWsHck9ARar3mNWXO/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="tag"
